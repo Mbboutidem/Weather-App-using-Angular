@@ -1,8 +1,9 @@
 # AngularWeatherApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.6.
+This is a simple weather app generated using Angular Framework, which can be used to search weather details of a city or a country as the case maybe. It shows the day time, night time, minimum temperature including the maximum temperature for each day offering maximum convenience to the end user. More so, it displays the location of the city on the map (google map) based on the user input.
 
-## Outputs
+# Outputs
 ![](img/img1.JPG)  ![](img/img2.JPG) ![](img/img3.JPG) ![](img/img4.JPG) ![](img/img5.JPG)
 
 ## Development server
