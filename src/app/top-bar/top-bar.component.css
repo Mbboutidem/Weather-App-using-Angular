@@ -60,6 +60,10 @@
 .mat-icon-button{
   font-size: 15px;
 }
+#search-label{
+  text-transform: uppercase;
+  padding-right: 10px;
+}
 
 ::ng-deep .form-field.mat-form-field-appearance-legacy .mat-form-field-underline,
 .form-field.mat-form-field-appearance-legacy .mat-form-field-ripple,

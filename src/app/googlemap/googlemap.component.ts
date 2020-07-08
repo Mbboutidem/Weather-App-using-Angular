@@ -33,7 +33,7 @@ export class GooglemapComponent implements OnInit {
   ngOnInit() {
   }
   //set map location
-    mapLocation(loc){
+    mapLocation(loc?){
       this.serv.getCurrentWeather(loc).subscribe((res:any) => {
         console.log(res);
         this.getmapLocation = res;
