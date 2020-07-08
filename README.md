@@ -3,7 +3,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.6.
 
 ## Outputs
-![](img/img1.JPG) || ![](img/img2.JPG) ![](img/img3.JPG)
+![](img/img1.JPG)  ![](img/img2.JPG) ![](img/img3.JPG) ![](img/img4.JPG) ![](img/img5.JPG)
 
 ## Development server
 
@@ -28,3 +28,6 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+# Contact
+* Repo created by <a href="https://github.com/Mbboutidem">Mbuotidem</a>
