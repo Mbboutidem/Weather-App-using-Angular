@@ -33,8 +33,7 @@ export class UvComponent implements OnInit {
   searchWeather(loc: string) {
     this.msg = '';
     this.currentWeather = {};
-    this.weatherService.getCurrentWeather(loc)
-      .subscribe(res => {
+    this.weatherService.getCurrentWeather(loc).subscribe(res => {
         this.currentWeather = res;
       }, err => {
 

@@ -1,5 +1,5 @@
 <div  *ngIf='resultFound()'>
-  <h1 class="center">Current UV data for {{currentWeather.name}}</h1>
+  <h1 class="center">Current UV data for {{currentWeather.name}} {{currentWeather.sys.country}}</h1>
   <mat-card *ngFor='let l of uv' id="uv-contaoner">
     <mat-card-header>
       <mat-card-title>
@@ -17,6 +17,6 @@
     </mat-card-content>
   </mat-card>
 </div>
-<div *ngIf='!resultFound()'>
-  <h1 class="center">{{msg || 'Failed to get weather.'}}</h1>
+<div *ngIf='!resultFound()' id="error-display">
+  <h1 class="center">{{msg || 'Failed to get weather index!'}}</h1>
 </div>

@@ -1,0 +1,13 @@
+<div *ngIf = 'resultFound()'>
+<agm-map [latitude] = "latitude" [longitude] = "longitude" (mapClick)= "mapLocation($event)" *ngIf = 'resultFound()'>
+  <!-- adding a marker to the map -->
+  <agm-marker [latitude] = "latitude"
+   [longitude] = "longitude"
+   >
+  </agm-marker>
+
+</agm-map>
+</div>
+<div *ngIf = '!resultFound()' id ="map-error">
+  <h1 class ="center">{{msg || 'Failed to get map location!'}}</h1>
+</div>

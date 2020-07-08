@@ -1,4 +1,4 @@
-<h1 class="center" *ngIf='resultFound()'>Latest Weather For {{currentWeather.name}}</h1>
+<h1 class="center" *ngIf='resultFound()'>Latest Weather For {{currentWeather.name}} {{currentWeather.sys.country}}  </h1>
 <table *ngIf='resultFound()'>
   <tbody>
     <tr>
@@ -75,6 +75,6 @@
     </tr>
   </tbody>
 </table>
-<div *ngIf='!resultFound()'>
-  <h1 class="center">{{msg || 'Failed to get weather.'}}</h1>
+<div *ngIf='!resultFound()' id="error-display">
+  <h1 class="center">{{msg || 'Failed to get city!'}}</h1>
 </div>

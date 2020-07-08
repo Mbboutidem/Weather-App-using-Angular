@@ -1,6 +1,6 @@
 <div id="forecast-container">
 <div *ngIf='resultFound()'>
-  <h1 class="center">Current weather forecast for {{currentWeather.name}}</h1>
+  <h1 class="center">Current weather forecast for {{currentWeather.name}} {{currentWeather.sys.country}}</h1>
   <div>
   <mat-card *ngFor='let l of forecast.list' class="card-container">
       <mat-card-title>
@@ -109,7 +109,7 @@
   </mat-card>
 </div>
 </div>
-<div *ngIf='!resultFound()'>
-  <h1 class="center">{{msg || 'Failed to get weather.'}}</h1>
+<div *ngIf='!resultFound()' id="error-display">
+  <h1 class="center">{{msg || 'Failed to get weather forecast!'}}</h1>
 </div>
 </div>
