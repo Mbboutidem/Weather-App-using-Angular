@@ -11,6 +11,8 @@ import { HomeSectionComponent } from './home-section/home-section.component';
 import { WeatherCurrentComponent } from './weather-current/weather-current.component';
 import { AlertsComponent } from './alerts/alerts.component';
 //
+import { MatIconModule} from '@angular/material/icon';
+
 import { MatButtonModule} from '@angular/material/button';
 import { MatToolbarModule} from '@angular/material/toolbar';
 import { MatInputModule} from '@angular/material/input';
@@ -39,6 +41,7 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     BrowserAnimationsModule,
     //
+    MatIconModule,
     MatButtonModule,
     MatToolbarModule,
     StoreModule.forRoot({

@@ -1,8 +1,24 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
 #container{
   margin: 10px;
+  color: rgb(12, 11, 11);
+}
+.body{
+  color: black;
 }
 
 #search{
   text-align: center;
-  font-size: 40px;
+  font-size: 50px;
+  text-transform: uppercase;
+
+}
+.mat-tab-label {
+  text-transform: uppercase;
+  color: black;
+  background-color: transparent;
 }

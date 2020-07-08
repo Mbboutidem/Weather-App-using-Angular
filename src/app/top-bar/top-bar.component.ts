@@ -11,7 +11,8 @@ import { SET_LOCATION } from '../location-reducer';
 export class TopBarComponent implements OnInit {
 
   loc: string;
-
+  //@Output()
+  // searchEvent = new EventEmitter
   constructor(private store: Store<any>) { }
 
   ngOnInit() {
@@ -22,5 +23,16 @@ export class TopBarComponent implements OnInit {
       return;
     }
     this.store.dispatch({ type: SET_LOCATION, payload: this.loc });
+  }
+
+  toggleSearch(){
+    const searchContainer = document.getElementById('search-container')
+    this.toggleClass(searchContainer, 'open');
+  }
+  private hasClass(element, className){
+    return element.classList.contains(className)
+  }
+  private toggleClass(element, className){
+    this.hasClass(element, className) ? element.classList.remove(className): element.classList.add(className);
   }
 }

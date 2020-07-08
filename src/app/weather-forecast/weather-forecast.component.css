@@ -1,0 +1,17 @@
+#forecast-container{
+  background-color: white;
+  font-size: medium;
+  text-align: left;
+  /* text-transform: uppercase; */
+}
+.card-container{
+ 
+  background-color: white;
+  padding: 0;
+  color: black;
+}
+.sub-card{
+  background-color: white;
+  color: black;
+  width: 300px;
+}

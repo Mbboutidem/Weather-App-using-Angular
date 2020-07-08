@@ -45,8 +45,8 @@ export class WeatherCurrentComponent implements OnInit {
       }, () => {
 
       })
+      
   }
-
   resultFound() {
     return Object.keys(this.currentWeather).length > 0;
   }

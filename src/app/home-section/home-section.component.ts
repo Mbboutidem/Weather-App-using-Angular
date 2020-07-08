@@ -1,11 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Store, select } from '@ngrx/store';
 
 @Component({
   selector: 'app-home-section',
   templateUrl: './home-section.component.html',
-  styleUrls: ['./home-section.component.css']
+  styleUrls: ['./home-section.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
 export class HomeSectionComponent implements OnInit {
 
